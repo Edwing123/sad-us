@@ -2,6 +2,7 @@
 
 - Set the main idea for my website.
 - Design the interfaces (mobile-first).
+- Design logo.
 
 
 ## The main idea
