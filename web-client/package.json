@@ -4,5 +4,9 @@
   "description": "Web client to consume sad-us-api service",
   "author": "Edwing123 <egarciavalle2014@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "sass": "^1.39.0",
+    "typescript": "^4.4.2"
+  }
 }
