@@ -1,0 +1,8 @@
+{
+  "name": "web-client",
+  "version": "0.0.1",
+  "description": "Web client to consume sad-us-api service",
+  "author": "Edwing123 <egarciavalle2014@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
