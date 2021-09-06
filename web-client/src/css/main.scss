@@ -1,4 +1,5 @@
-@use './_variables';
+@use './_variables.scss';
+@use './_animations.scss';
 @use './_reset.scss';
 
 
@@ -8,20 +9,51 @@ body {
 
 
 // HEADER STYLES
-.header {
-  padding: var(--size-14) 0 0;
-}
-
-.eye-logo {
-  width: var(--size-40);
-  display: block;
-  margin: 0 auto var(--size-10);
-}
-
 .main-heading {
   width: 80%;
   margin: 0 auto;
 
   font-size: var(--scale-3);
   text-align: center;
+  font-weight: var(--font-bold);
+  user-select: none;
+}
+
+
+// LOGO STYLES
+.logo-container {
+  position: relative;
+  z-index: var(--layer-top);
+  padding: var(--size-14) 0 0;
+  margin: 0 auto var(--size-10);
+
+  text-align: center;
+}
+
+.eye-logo {
+  width: var(--size-40);
+  animation: beating 800ms 0s alternate infinite var(--easing-standard);
+}
+
+
+
+// LOADER STYLES
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  bottom: 0;
+
+  background-color: #0B0A0A;
+  // transition: transform 700ms var(--easing-standard);
+  transform-origin: bottom;
+}
+
+// stop loading and logo animations
+.stop-logo {
+  animation: none;
+}
+
+.loader--hide {
+  animation: go-down 1000ms var(--easing-standard) 0ms 1 forwards;
 }

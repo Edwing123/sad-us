@@ -5,7 +5,6 @@ const TITLES = [
   'Just kiss Me Baby'
 ]
 
-
 const app = () => {
   // get loader reference
   const loader = document.querySelector('#loader')
@@ -13,8 +12,11 @@ const app = () => {
   // get main title reference
   const mainTitle = document.querySelector('#main-heading')
 
+  // get logo references
+  const logo = document.querySelector('#logo')
+
   // get random title
-  const titleIndex = Math.floor(Math.random() * (TITLES.length))
+  const titleIndex = Math.floor(Math.random() * TITLES.length)
   const title = TITLES[titleIndex]
 
   // assign selected title
@@ -23,10 +25,12 @@ const app = () => {
   }
 
   // take off loader
-  if (loader) {
-    loader.classList.add('hide')
+  if (loader && logo) {
+    setTimeout(() => {
+      loader.classList.add('loader--hide')
+      logo.classList.add('stop-logo')
+    }, 1500)
   }
 }
-
 
 window.addEventListener('DOMContentLoaded', () => app())

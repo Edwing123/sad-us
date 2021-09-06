@@ -1,0 +1,16 @@
+@keyframes beating {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.8);
+  }
+}
+
+
+@keyframes go-down {
+  to {
+    transform: scaleY(0);
+  }
+}
