@@ -3,7 +3,6 @@
   <head>
     <!-- metadata -->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- styles and assets -->
@@ -22,7 +21,21 @@
     <title>SadUs - Empty thoughts</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="container">
+      <!-- loader -->
+      <div id="loader" class="loader"></div>
+
+      <!-- page header -->
+      <header class="header">
+        <a href="/" class="logo">
+          <img src="./assets/eye-shaped-logo.png" alt="" class="eye-logo" />
+        </a>
+        <h1 class="main-heading" id="main-heading"></h1>
+      </header>
+
+      <!-- main area -->
+      <main class="main"></main>
+    </div>
     <script src="./js/app.ts"></script>
   </body>
 </html>

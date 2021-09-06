@@ -1,12 +1,27 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@use './_variables';
+@use './_reset.scss';
+
+
+body {
+  background-color: var(--color-black);
 }
 
-:root {
-  --font-family: 'Titillium Web', sans-serif;
-  font-family: var(--font-family);
+
+// HEADER STYLES
+.header {
+  padding: var(--size-14) 0 0;
+}
+
+.eye-logo {
+  width: var(--size-40);
+  display: block;
+  margin: 0 auto var(--size-10);
+}
+
+.main-heading {
+  width: 80%;
+  margin: 0 auto;
+
+  font-size: var(--scale-3);
+  text-align: center;
 }
