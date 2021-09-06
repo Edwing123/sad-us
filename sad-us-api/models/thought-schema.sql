@@ -5,5 +5,5 @@ CREATE TABLE thought
     message TEXT,
     last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     author VARCHAR(80),
-    CONSTRAINT pk_note PRIMARY KEY (thought_id)
+    CONSTRAINT pk_thought PRIMARY KEY (thought_id)
 )
