@@ -44,7 +44,9 @@ body {
   height: 100vh;
   bottom: 0;
 
-  background-color: #0B0A0A;
+  // background-color: #0B0A0A;
+  background-color: rgba(20, 20, 20, 0.5);
+  backdrop-filter: blur(20px);
   // transition: transform 700ms var(--easing-standard);
   transform-origin: bottom;
 }
