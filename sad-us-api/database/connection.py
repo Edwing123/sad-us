@@ -1,10 +1,7 @@
 from contextlib import contextmanager
-from typing import Iterator, ContextManager
 
 from pymysql.connections import Connection
-
 import pymysql.cursors
-
 from decouple import config
 
 db_config = {
