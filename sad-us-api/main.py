@@ -1,7 +1,7 @@
 from typing import List
 from fastapi import FastAPI
 
-from models import Thought, ResponseThought
+from models import RequestThought, ResponseThought
 import actions
 
 app = FastAPI()
@@ -9,7 +9,7 @@ app = FastAPI()
 
 # upload a thought
 @app.post("/add-thought")
-def add_thought(thought: Thought):
+def add_thought(thought: RequestThought):
     actions.add_thought(thought)
 
     return {
