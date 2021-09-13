@@ -4,7 +4,7 @@ from database import query, get_connection
 import models
 
 
-def add_thought(thought: models.RequestThought):
+def add_thought(thought: models.RequestThought) -> None:
     with get_connection() as connection:
         cursor = connection.cursor()
 
