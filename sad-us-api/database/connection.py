@@ -1,4 +1,7 @@
 from contextlib import contextmanager
+from typing import Iterator, ContextManager
+
+from pymysql.connections import Connection
 
 import pymysql.cursors
 
@@ -19,7 +22,7 @@ def get_connection():
     returns a context manager that provides
     a connection object of the database
     """
-    connection = pymysql.connect(**db_config)
+    connection: Connection = pymysql.connect(**db_config)
     yield connection
 
     # commit changes
