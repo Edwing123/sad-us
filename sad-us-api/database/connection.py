@@ -20,3 +20,6 @@ def get_connection():
 
     # commit changes
     connection.commit()
+
+    # close connection
+    connection.close()
