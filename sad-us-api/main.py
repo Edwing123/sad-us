@@ -18,7 +18,6 @@ def add_thought(thought: RequestThought):
     }
 
 
-
 # get thoughts
 @app.get("/thoughts/get", response_model=List[ResponseThought])
 def get_thoughts():
