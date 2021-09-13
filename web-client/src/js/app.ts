@@ -2,8 +2,7 @@ const TITLES = [
   'I Write About My Empty Thoughts',
   'I Cannot Save You Baby',
   'I Feel Useless',
-  'Just kiss Me Baby',
-  'Make Up Your Mind You Little Shit'
+  'I Lost You, I Just Couldn\'t Help At All'
 ]
 
 const app = () => {
